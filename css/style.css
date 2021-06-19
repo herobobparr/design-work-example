@@ -1,0 +1,638 @@
+@font-face {
+    font-family: 'proxima_nova_rgregular';
+    src: url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.woff2') format('woff2'),
+         url('../fonts/mark_simonson_-_proxima_nova_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_nova_altsemibold';
+    src: url('../fonts/mark_simonson_-_proxima_nova_alt_semibold-webfont.woff2') format('woff2'),
+         url('../fonts/mark_simonson_-_proxima_nova_alt_semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_nova_ltlight';
+    src: url('../fonts/mark_simonson_-_proxima_nova_light-webfont.woff2') format('woff2'),
+         url('../fonts/mark_simonson_-_proxima_nova_light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'proxima_nova_alt_rgbold';
+    src: url('../fontsmark_simonson_-_proxima_nova_alt_bold.woff2') format('woff2'),
+         url('../fontsmark_simonson_-_proxima_nova_alt_bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sanssemibold';
+    src: url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../fonts/opensans-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {font-family: 'proxima_nova_rgregular'; font-size: 16px;background: #deeafc;color: #a2a2a2;}
+a{text-decoration: none;outline: none !important;}
+
+/*Posts Page CSS Starts*/
+.custom-container {width: 100%; max-width: 1400px;margin: 0 auto;box-shadow: 0 0 5px rgba(0,0,0,0.1);background: #fff;}
+.top-sec {width: 100%;float: left;border-bottom: 1px solid #eee;}
+.top-logo {float: left;width: 20%;}  
+.top-search {padding: 30px 0;float: left;width: 50%;}
+#custom-search-input .input-group input{border: 0; border-radius: 0;box-shadow: none;}
+#custom-search-input .btn{background: transparent; border-radius: 0;}
+.input-group-btn {left: 0; position: absolute;}
+.input-group {padding: 0 0 0 30px;width: 100%;z-index: 0;}
+.top-right {display: inline-block;float: right;padding:15px 20px 0;font-family:'proxima_nova_altsemibold';font-size: 20px; width: 30%;text-align: right;}
+.add-post{background: #dfdfdf; height: 35px; width: 35px; text-align: center; border-radius: 50%;display: inline-block;position: relative;color: #fff;padding: 5px;top: 5px;position: relative;cursor: pointer;}
+.notify{background: #2a7bf4; height: 35px; width: 35px; text-align: center; border-radius: 50%;display: inline-block;position: relative;color: #fff;padding: 5px;top: 5px;position: relative;cursor: pointer;}
+.top-img {display: inline-block;position: relative;cursor: pointer;}
+.top-img img{display: inline-block; width: 60px; height: 60px;}
+.bottom-sec{display: inline-block; width: 100%;padding: 0 0 100px;}
+.left-menu {float: left;width: 20%;border-right: 1px solid #eee;}
+.left-menu ul {padding: 0;}
+.left-menu ul li {border-bottom: 1px solid #eee; padding: 20px 30px; list-style: none;}
+.left-menu ul li:hover{background: #2a7bf4;}
+.left-menu ul li:hover a{color: #fff;}
+.left-menu ul li a {color: #9ba5b1;text-transform: uppercase;font-size: 16px;text-decoration: none; font-family: 'proxima_nova_altsemibold';}
+.left-menu ul li a i {display: inline-block;font-size: 13px;margin-right: 5px;transform: scale(1.5);}
+.left-counter {	display: inline-block;	padding: 30px 40px;}
+.progress-bar {background-color: rgba(0, 0, 0, 0);box-shadow: none;color: #000000;display: inline-block;font-size: 12px;line-height: 0;margin: 0 auto;text-align: center; height: 175px;	width: 100%;}
+.progress-bar div {border-radius: 50%;height: 165px;left: 15%;margin: 0 auto;position: absolute;width: 165px;}
+.progress-bar div span {height: 135px;left: 15px;line-height: 145px;top: 15px;width: 135px;font-family: 'proxima_nova_altsemibold';}
+.progress-bar .rotate {background-color: hsl(215, 67%, 58%) !important;clip: rect(0px, 100px, 200px, 0px);}
+
+/*Top Dropdowns*/
+.top-img-drop {background: #fff;box-shadow: 0 5px 10px rgba(0,0,0,0.3);padding: 10px 20px;text-align: left;width: 150px; position: absolute;right: -10px;top: 100%;border-radius: 5px;display: none;z-index: 2;}
+.top-img-drop ul{padding: 0;margin: 0;}
+.top-img-drop ul li{list-style: none;}
+.top-img-drop ul li a{font-size: 14px;text-decoration: none;color: #a2a2a2;outline: none;}
+.top-img-drop ul li a:hover{color: #2a7bf4;}
+.notify-post-drop{position: absolute;top: 100%;width: 300px;font-size: 14px;right: -80px;color: #a2a2a2;background: #fff;box-shadow: 0 5px 10px rgba(0,0,0,0.2);z-index: 2;display: none;border-radius: 5px;}
+.notify-div{position: relative;color: #a2a2a2;text-align: left;padding: 15px 10px 15px 30px;cursor: pointer;}
+.notify-div:hover{color: #2a7bf4;}
+.notify-icon{position: absolute;left: 10px;font-size: 15px;}
+.notify-post-drop hr, .add-post-drop hr{margin: 0;}
+.add-post-drop{position: absolute;top: 100%;width: 300px;font-size: 14px;right: -80px;color: #a2a2a2;background: #fff;box-shadow: 0 5px 10px rgba(0,0,0,0.2);z-index: 2;display: none;border-radius: 5px;}
+
+/*Middle Section CSS*/
+.middle-sec {float: left;width: 60%;}
+.middle-div-sec {width: 100%;max-width: 650px;margin: 30px auto;}
+.upload-sec {display: inline-block;	width: 100%;position: relative;}
+.post{display:inline-block;width: 33%;text-align: center;float: left; color: #b0b0b0;}
+.post-icon{display:inline-block;font-size:25px;color:#fff;padding: 10px 10px;border-radius:50%;text-align: center;cursor: pointer;}
+.bg1{background: #f79c53;}
+.bg2{background: #8ade8a;}
+.bg3{background: #95bffe;}
+.post-box {position: absolute;top: 120%;max-width: 650px;width: 100%;}
+/*.post:hover .post-box{display: block;}*/
+.post-box textarea{border: 1px solid #eee;box-shadow: 0 0 10px rgba(0,0,0,0.2);border-radius: 5px;}
+.post-box textarea:focus{box-shadow: none;border-color: #2a7bf4;}
+.post-box::after {content: "";position: absolute;width: 0;height: 0;left: 20%;box-sizing: border-box;	border: 1em solid black;border-color:  transparent transparent #fff #fff;transform-origin: 0 0;	transform: rotate(-225deg);	box-shadow: -3px 3px 3px 0 rgba(0, 0, 0, 0.1); top: 2px;}
+.post-box-btns a { color: #9ba5b1;}
+.post-box-btns {display: inline-block;width: 100%;font-size: 25px;position: relative;top: -38px;}
+.post-left {display: inline-block; float: left;margin-left: 10px;}
+.post-right {display: inline-block;text-align: right;float: right;}
+.post-right .btn{background: #2a7bf4;color: #fff;border-radius: 0; border-bottom-right-radius: 5px;}
+.sorting {display: inline-block;width: 100%;margin-top: 200px;text-align: right;}
+.sorting a {margin-left: 40px;font-family: 'proxima_nova_altsemibold';font-size: 14px;color: #b0b0b0;text-decoration: none;}
+.sorting span {position: relative;top: 3px;}
+.user-post{box-shadow: 0 0 10px rgba(0,0,0,0.2);margin: 30px auto;width: 100%;border-radius: 10px;}
+.user-img {position: relative; padding: 25px 10px 25px 40px;width: 100%;font-family: 'proxima_nova_altsemibold';}
+.user-img img {position: absolute;left: -30px;height: 60px;width: 60px;top: 10px;}
+.user-name span {color: #2a7bf4;}
+.user-text{font-size: 18px;line-height: 26px;color: #a2a2a2;padding: 0 20px;}
+.post-content{color:#a2a2a2;display: inline-block; width: 100%;margin-top: 10px; background: #f5f5f5;padding: 20px 30px 0;}
+.post-content-div{background: #fff; box-shadow: 0 0 0 rgba(0,0,0,0.2);border-radius: 15px;height: 180px;
+overflow: hidden;}
+.post-img{display: inline-block;width: 40%;float: left}
+.post-img img{border-top-left-radius: 10px;border-bottom-left-radius: 10px;}
+.post-img-text {display: inline-block;width: 60%;padding: 10px 40px;}
+.date{font-size: 12px; margin-top: 10px;}
+.date span{margin-left: 10px;}
+.post-share-btn {width: 100%;float: left;margin-top: 20px;}
+.post-share-btn a {color: #a2a2a2;margin-right: 20px;font-size: 15px;text-decoration: none;}
+.post-reply {display: inline-block;width: 100%;text-align: right;position: relative;top: 15px;}
+.post-reply .btn{border-radius: 20px;color: #9ba5b1; background: #fff;box-shadow: 0 0 10px rgba(0,0,0,0.2);font-family: 'proxima_nova_altsemibold';font-size: 16px;color: #a2a2a2;padding: 7px 25px;}
+.post-com-text {padding: 0px 10px 20px;font-size: 18px;}
+.post-com {position: relative;padding: 15px 20px 15px 70px;}
+.post-com-img img {position: absolute;left: 0;width: 60px;height: 60px;border-radius: 50%;top: 5px;}
+.time-ago{position: absolute;right: 0; color: #a2a2a2 !important;}
+.user-name.post-com-text span{font-family: 'proxima_nova_altsemibold';display: block;}
+
+/*Right Section CSS*/
+.right-sec {width: 18%;display: inline-block;margin: 0px auto;}
+.people-sec{background: #fff;box-shadow: 0 0 20px rgba(0,0,0,0.2);padding: 15px;border-radius: 5px;margin: 30px 0;}
+.people-sec h4{font-family: 'proxima_nova_altsemibold';}
+.people-pro {position: relative;padding: 0px 20px 0px 60px;}
+.people-pro-img img {width: 50px;height: 50px;border-radius: 50%;position: absolute;left: 0;box-shadow: 0 0 10px rgba(0,0,0,0.2);}
+.people-pro-icon {position: absolute;right: 0;top: 15px; cursor: pointer;}
+.people-pro-text .user-name span{font-family: 'proxima_nova_altsemibold';}
+.sep {max-width: 100px;height: 2px;background: #a2a2a2;width: 100%;margin: 10px 0 20px;}
+.career-sec{text-align: center;}
+.career-sec p {font-size: 14px;font-family: 'proxima_nova_altsemibold';margin: 0;}
+.career-sec h4, .connect-message h4{font-family: 'proxima_nova_altsemibold';margin: 0;color: #2a7bf4;}
+.career-img span img {width: 50px;display: inline-block;margin: 20px 0;height: 50px;}
+#owl-demo {margin: 20px 0 0;}
+#owl-demo .item img{border-radius: 50%;height: 150px;width: 150px;margin-bottom: 10px;}
+.connect-message p{font-size: 16px;font-family: 'proxima_nova_rgregular';}
+#owl-demo .owl-buttons {position: absolute;top: 40%;transform: translateY(-50%);width: 100%;color: #4f4f4f;}
+#owl-demo .owl-buttons .owl-prev{position: absolute;left: 0;}
+#owl-demo .owl-buttons .owl-next{position: absolute;right: 0;}
+.progress-bar .right, .progress-bar .left {background-color: #4b86db !important;}
+/*Posts Page CSS Ends*/
+
+/*Login Page CSS Starts*/
+.login-logo{margin: 40px auto;}
+.login-form{background: #fff;padding: 30px 30px;border-radius: 3px;max-width: 400px;margin: 0 auto;}
+.login-form h3{font-family: 'proxima_nova_altsemibold';text-transform: uppercase;color: #4f4f4f;margin: 0;text-align: center;}
+.login-form label {text-transform: uppercase;color: #4f4f4f;font-size: 14px;}
+.login-form .form-group {margin-bottom: 0px;position: relative;margin-top: 15px;}
+.show-pass {background: #e7d224;color: #4f4f4f;position: absolute;top: 55%;right: 5px;font-size: 10px;padding: 4px;font-family: 'proxima_nova_altsemibold';cursor: pointer;}
+.login-form .form-group input{box-shadow: none;height: 40px;border-radius: 3px;}
+.login-btn{background: #0896d7;color: #fff;font-family: 'proxima_nova_altsemibold';font-size: 20px;text-transform: uppercase;box-shadow: 0 5px 0px rgba(0,117,170,0.9);padding: 10px 0;outline: none;margin: 10px 0 0;}
+.login-btn:hover{color: #fff;background: #0086c8;}
+.join-btn{background: #e5d804;color: #353434;font-family: 'proxima_nova_altsemibold';font-size: 20px;text-transform: uppercase;padding: 10px 0;box-shadow: 0 5px 0px rgba(160,151,2,0.9);outline: none;margin: 10px 0 0;display: inline-block;}
+.join-btn:hover{color: #353434;background: #d6ca1d;}
+.form-sep{float: left;width: 100%;position: relative;height: 1px;background: #dee2e7;margin: 25px 0 10px;}
+.form-sep span {position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);background: #fff;padding: 2px;color: #dee2e7;}
+.remember{display: inline-block;width: 100%;margin-top: 5px;}
+.remember .checkbox{margin: 0;width: 50%;float: left;}
+.remember .checkbox label {text-transform: capitalize;}
+.remember .forgot a{float: left;width: 50%;text-align: right;color: #04a9f4;font-family: 'proxima_nova_alt_rgbold';text-decoration: none;outline: none;}
+.login-buttons {display: inline-block;margin: 20px 0 0;width: 100%;}
+.login-buttons .btn {color: #fff;font-size: 16px;margin-bottom: 10px;padding: 10px 0;position: relative;text-align: left;outline: none;text-align: center;font-family: 'proxima_nova_altsemibold';}
+.fb-bg {background: #0171C5;box-shadow: 0 5px 0px rgba(0,85,158,0.9);}
+.google-bg {background: #dc4b38;box-shadow: 0 5px 0px rgba(206,61,52,0.9);}
+
+/*Profile Page CSS Start*/
+.profile-banner{background: url(../images/profile-banner.jpg) no-repeat center center/cover;padding: 25% 0 40px;}
+.pro-btn{text-align: right;}
+.pro-btn a {border: 2px solid #fff;color: #fff;text-transform: uppercase;font-size: 18px;border-radius:30px;padding: 8px 30px;margin: 0 5px;font-family: 'proxima_nova_altsemibold';outline: none;}
+.pro-btn a:hover{background: #2a7bf4;color: #fff;border: 2px solid #2a7bf4;}
+.pro-img img {width: 100px;height: 100px;border-radius: 50%;border: 3px solid #2a7bf4;}
+.pro-info {display: inline-block;width: 100%;margin-top: -50px;}
+.pro-img {display: inline-block;width: 12%;float: left;}
+.person-info {display: inline-block;margin-top: 60px;}
+.person-name{font-size: 32px;color: #2a7bf4;font-family: 'open_sansbold';}
+.person-position{font-size: 24px;color: #8d95a1;font-family: 'open_sansregular';}
+.person-status {font-size: 18px;}
+.person-status span {margin-right: 25px;}
+.person-status .status-num{color: #2a7bf4;margin-right: 0px;}
+.profile-details {width: 100%;display: inline-block;margin: 20px 0 0;}
+.pro-detail-left {width: 65%;float: left;}
+.pro-about{box-shadow: 0 0px 10px rgba(0,0,0,0.2);border-radius: 5px;background: #fff;padding: 20px 10px;margin-top: 20px;display: inline-block;width: 100%;}
+.detail-title {font-size: 18px;color: #2a7bf4;font-family: 'proxima_nova_altsemibold';margin: 10px 0;}
+.pro-about p {font-size: 18px;}
+.pro-about p a {font-size: 16px;color: #2a7bf4;}
+.group-name h4 {font-family: 'open_sanssemibold';color: #5a6277;}
+.group-name p {margin: 0;}
+.group-name p span {margin-left: 50px;}
+.group-img {margin-top: 20px;}
+.group-img img {border: 2px solid #3daeae;border-radius: 50%;height: 80px;width: 80px;padding: 5px;}
+.side-group {display: inline-block;width: 100%;position: relative;padding: 10px 0 25px 100px;}
+.side-group .group-img {position: absolute;left: 0;}
+.side-group .group-name {margin-top: 35px;}
+.side-group .group-name h4 {margin: 0;}
+.pro-detail-right {float: right;width: 33%;}
+.achieve{position: relative;padding: 0 0 0 35px;}
+.achieve-icon{position: absolute;left: 0;font-size: 20px;}
+.achieve-text p {font-size: 16px;}
+.colab-images {text-align: center;margin: 20px 0;}
+.colab-images span {display: inline-block;margin-left: -30px;}
+.colab-images span img {border-radius: 50%;height: 80px;width: 80px;}
+/*Profile Page CSS End*/
+
+/*Profile Modal CSS Starts*/
+label{color: #565a5c;font-size: 15px;}
+.profile-modal{text-align: left;}
+.profile-modal .modal-header{border-bottom: 0;}
+.profile-modal .modal-body {position: relative;padding: 15px;border: 0;display: inline-block;width: 100%;}
+.profile-modal .modal-title{color: #2a7bf4;text-align: center;font-family: 'proxima_nova_altsemibold';font-size: 20px;}
+.profile-modal .modal-dialog {max-width: 750px;width: 100%;margin: 30px auto;}
+.profile-modal .form-control{border: 1px solid #c4c4c4;box-shadow: none;border-radius: 0;}
+.profile-modal .form-control:focus{border: 1px solid #2a7bf4;box-shadow: none;border-radius: 0;}
+.profile-modal .form-control input{height: 40px;}
+.profile-modal .form-group label span{color: #2a7bf4;}
+.styled-select select{-moz-appearance: none;border: 1px solid #c4c4c4;width: 100%;height: 40px;font-size: 14px;}
+.styled-select{position: relative;}
+.styled-select:before {border-right: 7px solid transparent;border-left: 7px solid transparent;border-top: 7px solid #565a5c;position: absolute;top: 50%;transform: translateY(-50%);right: 10px;content: '';}
+.edu-div{font-size: 15px;font-family: 'proxima_nova_rgregular';color: #565a5c;}
+.media-text{font-size: 15px;font-family: 'proxima_nova_rgregular';color: #565a5c;}
+.media-btn .btn{border-radius: 0;box-shadow: 0 0 10px rgba(0,0,0,0.3);padding:13px 25px;text-transform: uppercase;border:0; margin: 20px 0 0;}
+.media-btn .btn1{background: #2a7bf4;color: #fff;}
+.media-btn .btn1:hover{background: #136fe2;color: #fff;}
+.media-btn .btn2{background: #fff;color: #a2a2a2;}
+.media-btn .btn2:hover{background: #136fe2;color: #fff;}
+.note{color: #747779;background: #f3f3f3;font-size: 15px;font-family: 'proxima_nova_rgregular';padding: 10px;display: inline-block;width: 100%;}
+.profile-modal .modal-footer {padding: 0;text-align: left;border-top: 0;}
+.save-btn{text-align: center;margin: 20px 0;display: inline-block;width: 100%;}
+.save-btn .btn{border-radius: 0;box-shadow: 0 0 10px rgba(0,0,0,0.3);padding:13px 35px;text-transform: uppercase; border:0;background: #2a7bf4;color: #fff;}
+.save-btn .btn:hover{background: #136fe2;color: #fff;}
+.modal-header .close {margin-top: -2px;font-size: 25px;}
+/*Profile Modal CSS Ends*/
+
+/*Inbox Page CSS Start*/
+.inbox-banner {background: url(../images/profile-banner.jpg) no-repeat center center/cover;padding: 10% 0;}
+.inbox-banner h1 {text-align: center;color: #fff;text-transform: uppercase;font-family: 'open_sansbold';}
+.inbox-sec {text-align: center;}
+.inbox-main {max-width: 1000px;margin: 0 auto;width: 100%;box-shadow: 0px 4px 5px rgba(0,0,0,0.2);display: inline-block;text-align: left;position: relative;top: -70px;background: #fff;}
+.inbox-left {width: 20%;float: left;}
+.inbox-left ul{padding: 0;margin: 0;list-style: none;}
+.inbox-left ul li{border-left: 2px solid #fff;}
+.inbox-left ul li:hover{border-left: 2px solid #2a7bf4;background: #eee;}
+.inbox-left ul li.active{border-left: 2px solid #2a7bf4;background: #eee;}
+.inbox-left ul li a{padding: 5px 20px;display: inline-block;text-decoration: none;color: #a2a2a2;font-size: 18px;}
+.inbox-act {float: left;width: 100%;padding: 20px;border: 1px solid #eee;}
+.compose-btn {width: 20%;float: left;}
+.compose-btn .btn{background: #2a7bf4;border: 2px solid #2a7bf4;color: #fff;text-transform: uppercase;font-size: 16px;padding: 5px 15px;border-radius: 20px;}
+.sort {width: 25%;float: left;margin-top: 5px;}
+.sort select {border: 1px solid #eee;height: 30px;width: 100%;}
+.act-links {text-align: right;width: 75%;float: right;font-size: 20px;}
+.act-links a{color: #f79c53;}
+.act-icons {display: inline-block;border: 1px solid #eee;margin-top: 5px;}
+.act-links a {color: #a2a2a2;border-right: 1px solid #eee;padding: 3px 5px;}
+.act-links a:hover {color: #f79c53;border-right: 1px solid #eee;padding: 3px 5px;}
+.act-links a:last-child {border-right: 0;}
+.act-right {width: 80%;float: left;}
+.inbox_area {display: inline-block;padding: 15px 25px 15px 100px;width: 100%;position: relative;border-bottom: 1px solid #eaeced;cursor: pointer;}
+.inbox_message div {display: inline-block;}
+.inbox_profile_img {left: 20px;position: absolute;}
+.inbox_profile_img img {border-radius: 50%;width: 70px;height: 70px;}
+.inbox-right{width: 80%;float: left;border-left: 1px solid #eee;}
+.inbox_action {position: absolute;right: 20px;top: 50%;transform: translateY(-50%);}
+.inbox_title {padding: 15px 0;}
+.inbox_title h5 {margin: 0;font-family: 'open_sanssemibold';font-size: 16px;}
+.inbox-right > div:nth-child(even){background: #eeeeee;}
+.inbox-right hr{margin: 0;}
+/*Inbox Page CSS End*/
+
+/*Profile Setting Page CSS Start*/
+.setting-banner{background: url(../images/setting-banner.jpg) no-repeat center center/cover;padding: 10% 0;}
+.bottom-profile-seting{text-align: center;}
+.profile-seting {max-width: 1000px;margin: 0 auto;width: 100%;box-shadow: 0px 4px 5px rgba(0,0,0,0.2);display: inline-block;text-align: left;}
+.profile-seting .nav-tabs{display: inline-block;width: 100%;text-align: center;}
+.profile-seting h3{font-family: 'proxima_nova_altsemibold';color: #2a7bf4;}
+.profile-seting ul{padding: 0;margin: 0;border: 0;}
+.profile-seting ul > li{list-style: none;border: 0;}
+.profile-seting > ul > li{list-style: none;border: 0;padding: 20px 20px;}
+.profile-seting ul > li a{font-size: 16px;text-decoration: none;color: #a2a2a2;padding: 5px 0;display: inline-block;outline: none;border: 0;text-transform: uppercase;border-bottom: 1px solid #fff;padding: 0;}
+.profile-seting .nav-tabs > li.active > a, .profile-seting .nav-tabs > li.active > a:focus, .profile-seting .nav-tabs > li.active > a:hover, .profile-seting .nav-tabs > li > a:hover{border: 0;color: #2a7bf4;background: none;border-bottom: 1px solid #2a7bf4;}
+.profile-seting label{margin-top: 10px;}
+.profile-seting .form-control{border-radius: 0;box-shadow: none;}
+.profile-seting .form-control input{height: 40px;border: 1px solid #eee;box-shadow: none;border-radius: 0;}
+.profile-seting .form-control:focus{border: 1px solid #2a7bf4;box-shadow: none;}
+.seting-title {float: left;width: 30%;padding: 0 20px;padding: 20px 20px 40px;}
+.seting-info {padding: 20px 20px 40px;display: inline-block;width: 100%;}
+.account_delete h3 {color: #373737;}
+.profile-seting select{height: 40px;border: 1px solid #eee;box-shadow: none;border-radius: 0;width: 100%;}
+.change_profile_img img{border-radius: 50%;height: 150px;margin: 0 auto;width: 150px;}
+.pro_img_buttons{text-align: center;margin: 20px 0;}
+.bio_area textarea {width: 100%;}
+.change_profile_img p {font-size: 14px;line-height: 24px;text-align: center;font-family: "open_sansregular";}
+.bio_area {width: 80%;margin: 20px auto;}
+.account_delete {display: inline-block;width: 100%;}
+/*Profile Setting Page CSS End*/
+
+/*Connection Page CSS Start*/
+.connection {padding: 20px 20px;display: inline-block;width: 100%;color: #404040;}
+.connection-list {display: inline-block;width: 100%;text-align: center;padding: 10px 10px;margin-top: 20px;box-shadow: 0 0 10px rgba(0,0,0,0.2);border-radius: 5px;}
+.connection-list:hover {background: #2a7bf4;color: #fff;}
+.connection-list:hover a{color: #fff;}
+.connection-list img{width: 80px;height: 80px;margin: 0px auto;border-radius: 50%;}
+.connection-btn a {position: relative;display: inline-block;color: #404040;padding: 0 5px;font-size: 15px;}
+.connection-btn a .tooltiptext {visibility: hidden;width: 120px;background-color: #f79c53;color: #fff;text-align: center;padding: 2px 0;position: absolute;z-index: 1;top: 100%;font-size: 14px;font-family: 'open_sanssemibold';border-radius: 3px;}
+.connection-btn a:hover .tooltiptext {visibility: visible;}
+.connection-detail h4{font-family: 'open_sanssemibold';text-transform: uppercase;margin-bottom: 0;}
+/*.load-btn{text-align: center;margin: 20px 0;display: inline-block; width: 100%;}*/
+.connection-left{float: left;width: 50%;}
+.connection-right {float: right; width: 50%;}
+.connection-right .input-group {padding: 0;}
+.connection-right .input-group input {border-radius: 0;border: 1px solid #eee;box-shadow: none;}
+.connection-right .input-group input:focus {border-radius: 0;border: 1px solid #2a7bf4;box-shadow: none;}
+.input-btn .btn {border-radius: 0;color: #2a7bf4;position: absolute;right: 1px;top: 1px;bottom: 1px;z-index: 9;}
+.connection-left .nav-tabs {border-bottom: 0 solid hsl(0, 0%, 87%);}
+.connection-left .nav-tabs > li > a {border: 0 none !important;padding: 5px 10px;text-transform: uppercase;font-family: 'open_sanssemibold';color: #a2a2a2;outline: none;}
+.connection-left .nav-tabs > li > a:hover{color: #2a7bf4;background: none;outline: none;}
+.connection-left .nav-tabs > li.active > a{color: #2a7bf4;}
+.tab-content {display: inline-block;margin-top: 30px;width: 100%;}
+.connection-btn .btn {background: #2a7bf4 none repeat scroll 0 0;border: 1px solid #2a7bf4;border-radius: 20px;color: #fff;font-size: 14px;padding: 4px 15px;text-transform: uppercase;outline: none;font-family: 'proxima_nova_altsemibold';}
+.connection-list:hover .connection-btn .btn{background: #fff;color: #2a7bf4;border-color: #fff;}
+/*Connection Page CSS End*/
+
+/*Group Page CSS Start*/
+.middle-main-sec {float: left;width: 80%;}
+.group-banner{background: url(../images/group-banner1.jpg) no-repeat center center/cover;padding: 10% 0;}
+/*Group Page CSS End*/
+
+/*Notification Page CSS Start*/
+.inbox-main .notify-div{padding: 10px 60px 10px 60px; }
+.notify-close { position: absolute; right: 10px; top: 50%; transform: translateY(-50%);font-size: 20px;}
+.notify-date { padding: 3px 40px; text-align: right;}
+.inbox-main hr{margin: 0;}
+.notification-main .notify-div .notify-icon{left: 40px;}
+.notification-main .notify-div .notify-close{right: 40px;}
+/*Notification Page CSS End*/
+
+/*Chat Box CSS Start*/
+.chat-div {position: fixed;right: 10px;bottom: 10px;transition: all ease 0.5s;}
+.chat-box{background: #fff;box-shadow: 0 0 10px rgba(0,0,0,0.2);display: inline-block;max-width: 350px;position: fixed;    right: 250px; width: 100%;bottom: 0;display: none;transition: all ease 0.5s;}
+.chat-top{background: #2a7bf4;padding: 10px;color: #fff;font-family: 'open_sanssemibold';display: inline-block;width: 100%;}
+.chat-top-left{width: 40%;float: left;}
+.chat-top-right{width: 60%;float: right;text-align: right;}
+.chat-top-right a{color: #fff;font-size: 14px;margin: 0 3px;}
+.chat-bottom-text{display: inline-block;width: 100%;padding: 10px 10px;}
+.chat-img {width: 20%;float: left;}
+.chat-img img {border-radius: 50%;height: 50px;width: 50px;box-shadow: 0 0 5px rgba(0,0,0,0.3);}
+.chat-text {width: 75%;float: left;margin-left: 10px;background: #373737;border-radius: 10px;padding: 5px 10px;color: #fff;}
+.chat-img.chat-img1 {float: right;}
+.chat-text1 {margin-left: 0;margin-right: 10px;}
+.chat-bottom {font-size: 14px;}
+.chat-icon {background: #2a7bf4;color: #fff;height: 50px;width: 50px;border-radius: 50%;font-size: 25px;text-align: center; cursor: pointer;padding: 10px;}
+.chat-box.chat-show{display: block;}
+.all-chat {position: fixed;top: 0;bottom: 0;right: -100%;width: 100%;background: #2a7bf4;max-width: 250px; height:100%;overflow: auto;color: #fff;padding: 20px 20px;font-family: 'proxima_nova_altsemibold';transition: all ease 0.5s;}
+.all-chat-top {font-size: 18px;}
+.chat-per {font-size: 14px;padding: 10px 0;cursor: pointer;}
+.chat-per span{font-size: 12px;margin-right: 5px;}
+.act-per{color: #8ade8a;}
+.all-chat.all-chat-show{right: 0;}
+.all-chat-close {float: right;cursor: pointer;}
+/*Chat Box CSS Ends*/
+
+/*News Page CSS Starts*/
+.news-sec a{font-size: 14px;}
+.news-sec h4{font-family: 'proxima_nova_altsemibold';}
+.bottom-news{text-align: left;box-shadow: 0 0 10px rgba(0,0,0,0.2);display: inline-block;border-radius: 5px;line-height: 24px;margin: 20px 0;}
+.bottom-news-img img {border-top-left-radius: 5px;border-top-right-radius: 5px;}
+.bottom-news-text{padding: 10px 20px;}
+.bottom-news-text i {font-size: 12px;margin-left: 10px;margin-right: 2px;}
+/*News Page CSS Ends*/
+
+
+/*Job Page CSS Starts*/
+.job-sec{font-size: 15px;border: 1px solid #d5d5d5;padding: 20px 40px;margin-top: 20px;}
+.job-sec h4, .job-sec h5{font-family: 'proxima_nova_altsemibold';}
+.appli {position: relative;text-align: left;padding: 0 0 0 40px;}
+.appli-icon {position: absolute;left: 10px;font-size: 25px;}
+.job-bottom{text-align: left;}
+.job-sec img {margin: 15px auto;height: 50px;}
+.job-top {box-shadow: 0 0 10px rgba(0,0,0,0.1);padding: 20px 10px;display: inline-block;width: 100%;margin-top: 30px; border-radius: 10px;}
+.job-top-left {float: left;width: 50%;text-align: left;}
+.saved {float: left;margin: 0 10px 0 20px;width: 25%;text-align: left;border-right: 2px solid #d5d5d5;}
+.applied{float: left;margin: 0 0 0 20px;}
+.job-top-right {float: right;text-align: right;width: 50%;}
+.talent {float: left;text-align: right;width: 60%;margin: 0 20px 0 0;padding: 10px 0;}
+.post-job {float: left;width: 35%;position: relative;border-left: 2px solid #d5d5d5;color: #2a7bf4;font-family: 'proxima_nova_altsemibold';	font-size: 15px;cursor: pointer;padding: 0 0 0 65px;text-align: left;}
+.post-job-icon {position: absolute;left: 25px;color: #fff;background: #95bffe;height: 30px;width: 30px;border-radius: 50%; padding: 4px 0;text-align: center;font-size: 16px;top: 3px;}
+.post-text {padding: 5px 0 20px;}
+
+.left-menu-icon, .left-menu-icon-close{display: none;}
+
+
+
+
+
+
+
+@media screen and (max-width:1199px){
+    /*POST PAGE STARTS*/
+    .left-menu {width: 25%;}
+    .middle-sec {width: 75%;}
+    .right-sec {width: 100%;}
+    .people-sec {margin: 30px 15px;width: 30%;float: left;}
+    
+    /*PROFILE PAGE STARTS*/
+    .pro-about p {font-size: 16px;}
+    .group-name p span {margin-left: 30px;}
+    
+    /*PROFILE SETTING PAGE STARTS*/
+    .profile-seting {max-width: 850px;}
+    
+    /*SETTING PAGE STARTS*/
+    .middle-main-sec {width: 75%;}
+    .setting-banner {padding: 15% 0;}    
+    .inbox-main{width: 95%;}
+    
+    /*NOTIFICATION PAGE STARTS*/
+    .middle-main-sec {width: 75%;}
+    .setting-banner {padding: 15% 0;}
+    
+    /*GROUPS PAGE STARTS*/
+    .connection-list {min-height: 220px;}
+    
+    /*INBOX PAGE STARTS*/
+    .act-right{width: 100%}
+    .sort, .act-links{width: 50%}
+    
+    /*JOB PAGE STARTS*/
+    .job-top-left {width: 40%;}
+    .saved {width: 35%;}
+    .job-top-right {width: 60%;}
+    .job-sec {padding: 20px 10px;}
+    
+}
+@media screen and (max-width:991px){
+    /*POST PAGE STARTS*/
+    .left-menu-icon, .left-menu-icon-close{display: block;}
+    .bottom-sec {padding: 0 20px 100px;}
+    .left-menu-icon {cursor: pointer;font-size: 25px;left: 10px;position: absolute;color: #2a7bf4;}
+    .left-menu {width: 30%;position: absolute;background: #fff;z-index: 99;border: 0;box-shadow: 0 0 10px rgba(0,0,0,0.1); left: -100%;transition: all ease 0.5s;}
+    .left-menu.slide{left: 0;}
+    .left-menu-icon-close {position: absolute;right:0px;top: 0px;font-size: 15px;background: #2a7bf4;height: 25px;width: 25px;text-align: center;padding: 3px 0;cursor: pointer;color: #fff;}
+    .post-content-div {min-height: 170px;height: auto;}
+    .post-img-text {padding: 5px 10px;}
+    .user-img img {left: -20px;height: 50px;width: 50px;}
+    .right-sec {width: 25%;}   
+    .people-sec {margin: 30px 0 0 10px;width: 100%;float: left;padding: 10px 10px;}
+    .people-sec h4 {font-size: 16px;}
+    .people-pro {padding: 0px 20px 0px 50px;}   
+    .people-pro-img img {width: 40px;height: 40px;}
+    .user-name {font-size: 15px;line-height: 18px;}
+    #owl-demo .item img {height: 100px;width: 100px;}
+    
+    /*PROFILE PAGE STARTS*/
+    .pro-img {width: 16%;}
+    .pro-about p a {font-size: 14px;color: #2a7bf4;}
+    
+    /*PROFILE SETTING PAGE STARTS*/
+    .profile-seting {max-width: 700px;}
+    
+    /*SETTING PAGE STARTS*/
+    .middle-main-sec {width: 100%;}
+    .setting-banner {margin-top: 40px;}
+    .profile-seting {max-width: 100%;}
+    
+    /*NOTIFICATION PAGE STARTS*/
+    .inbox-banner {padding: 15% 0;margin-top: 40px;}
+    
+    /*NEWS PAGE STARTS*/
+    .news-bottom {margin-top: 30px;}
+    .bottom-news-img img {width: 100%;}
+}
+@media screen and (max-width:767px){
+    /*POST PAGE STARTS*/
+    .middle-sec {width: 100%;}
+    .right-sec {width: 100%;}
+    .people-sec.career-sec{width: 48%;float: left;}
+    .post {font-size: 12px;}
+    .post-icon {font-size: 20px;padding: 5px 5px;}
+    .sorting a {margin-left: 20px;font-size: 12px;}
+    .sorting {margin-top: 180px;}
+    .user-text {font-size: 16px;line-height: 24px;}
+    .post-content-div {min-height: 130px;}
+    .post-img-text {font-size: 12px;}
+    .post-img-text h4 {font-size: 15px;margin: 3px 0;}
+    .people-sec.career-sec {width: 47%;margin: 30px 0 0 10px;}
+    .people-sec {margin: 30px 0 0 0px;}
+    .left-menu {width: 50%;top: 0px;}
+    .left-menu ul li {padding: 15px 10px;}
+    .left-menu ul li a{font-size: 14px;}
+    .left-menu ul li a i {font-size: 12px;transform: scale(1.2);}
+        
+    /*PROFILE PAGE STARTS*/
+    .pro-detail-left, .pro-detail-right {width: 100%;}
+    .pro-btn a {font-size: 14px;padding: 5px 25px;}
+    .pro-img {width: 25%;}
+    .person-name {font-size: 25px;}
+    .person-position {font-size: 20px;}
+    .person-status {font-size: 16px;}
+    .top-search {padding: 20px 0;}
+    .top-right {padding: 10px 10px 0;}
+    .add-post {height: 25px;width: 25px;padding: 0px;font-size: 15px;}
+    .notify {height: 25px;width: 25px;padding: 0px;font-size: 15px;}
+    #custom-search-input .input-group input {font-size: 12px;}
+    .top-search {padding: 10px 0;width: 100%;}
+    #custom-search-input {border: 1px solid #eee;width: 80%;margin: 0 auto;}
+    .top-right {width: 60%;}
+    
+    /*PROFILE SETTING PAGE STARTS*/
+    .seting-title{width: 100%;padding: 0 20px;}
+    .seting-info{width: 100%;padding: 0px 20px 40px;}
+    .profile-modal .modal-dialog {max-width: 450px;}
+    
+    
+    
+    /*SETTING PAGE STARTS*/
+    .setting-banner {padding: 20% 0;margin-top: 30px;}
+    .profile-seting > ul > li {padding: 10px 10px;}
+    .profile-seting ul > li a {font-size: 12px;text-transform: capitalize;}
+    .bio_area {width: 100%;}
+    .seting-info {padding: 0px 0px 20px;}
+    .account_delete {padding: 0 10px;}
+    
+    /*NOTIFICATION PAGE STARTS*/
+    .inbox-main .notify-div {padding: 10px 20px 10px 30px;}
+    .notification-main .notify-div .notify-icon {left: 10px;}
+    .notification-main .notify-div .notify-close {right: 10px;}
+    
+    /*CONNECTIONS PAGE STARTS*/
+    .connection-left{width: 100%;}
+    .connection-right {float: left;width: 100%;margin-top: 20px;}
+    .connection-left .nav-tabs > li > a {border: 0 none !important;padding: 5px 5px;font-size: 12px;margin: 0;}
+    .connection-btn .btn{font-size: 12px;}
+    
+    /*INBOX PAGE STARTS*/
+    .inbox-left {width: 100%;border-bottom: 1px solid #eee;}
+    .inbox-left ul li {float: left;}
+    .inbox-left ul li a{font-size: 14px;}
+    .inbox-right {width: 100%;margin-top: 40px;}
+    .inbox_action {position: inherit;transform: none;text-align: right;float: right;}
+    .inbox-banner {padding: 20% 0;}
+    .inbox-banner h1 {font-size: 30px;margin: 20px 0;}
+    
+    /*JOB PAGE STARTS*/
+    .job-top-left {width: 100%;}
+    .job-top-right {width: 100%;margin-top: 20px;}
+    .talent{width: 40%;}
+    .post-job{width: 50%;}
+    .saved {width: 50%;margin: 0;}    
+    
+}
+@media screen and (max-width:480px){
+    /*POST PAGE STARTS*/
+    .left-menu {width: 60%;}
+    .left-counter {padding: 30px 10px;}
+    .sorting a {margin-left: 5px;font-size: 9px;}
+    .post-content-div {min-height: auto;}
+    .post-content {padding: 20px 15px 0;}
+    .post-img {width: 100%;}
+    .post-img img {border-top-left-radius: 0;border-bottom-left-radius: 0;width: 100%;}
+    .post-img-text {font-size: 14px;width: 100%;}
+    .post-img-text h4 {font-size: 16px;margin: 10px 0;}
+    .post-share-btn a {margin-right: 10px;font-size: 13px;}
+    .post-com {	padding: 15px 20px 15px 50px;}
+    .post-com-img img {width: 50px;height: 50px;}
+    .post-com-text {padding: 0px 10px 10px;font-size: 14px !important;}
+    .people-sec.career-sec {width: 100%;margin: 30px 0 0 0px;}
+    
+    /*PROFILE PAGE STARTS*/
+    .top-logo {float: left;width: 25%;}
+    .top-right {width: 75%;padding: 5px 15px;}
+    #custom-search-input {width: 95%;}
+    .profile-banner {padding: 25% 0;}
+    .pro-img {width: 100%;}
+    .pro-img img{margin: 0 auto;}
+    .person-info {margin-top: 20px;}
+    .group-name p span {margin-left: 15px;}
+    .side-group .group-name h4 {font-size: 15px;}
+    .pro-about p {font-size: 15px;}
+    .pro-btn a {padding: 5px 20px;}
+    
+    .profile-modal .modal-dialog {max-width: 300px;}
+    .profile-modal .modal-body{padding: 10px 0;}
+    .note {font-size: 12px;padding: 10px 5px;}
+    
+    /*NOTIFICATION PAGE STARTS*/
+    .notification-main .notify-div .notify-close {right: 10px;bottom: 0;top: 100%;transform: none;}
+    
+    /*INBOX PAGE STARTS*/
+    .sort {width: 35%;}
+    .act-links {width: 65%;}
+    .inbox-left ul li a {font-size: 12px;padding: 5px 8px;}
+    .inbox_area{padding: 10px;}
+    .inbox_profile_img {position: inherit;}
+    .inbox_profile_img img {width: 50px;height: 50px;}
+    
+}
+
+
+
